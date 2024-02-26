@@ -1,0 +1,230 @@
+.modal.open {
+    opacity: 1;
+    z-index: 900;
+}
+
+.modal-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 1px 6px;
+    border-color: transparent;
+    border-width: 2px;
+    border-radius: 50%;
+    background-color: var(--color-design-white);
+    cursor: pointer;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+
+    overflow-x: hidden;
+
+    @media screen and(min-width:768px) {
+        align-items: center;
+    }
+
+    @media screen and(min-width:1280px) {
+        align-items: center;
+    }
+}
+
+
+
+.moviecard-modal-content {
+    margin-top: 20px;
+    position: absolute;
+    background-color: white;
+    width: 280px;
+    padding: 40px 20px 20px 20px;
+
+    @media screen and(min-width:768px) {
+
+        width: 618px;
+        min-height: 562px;
+        padding: 40px 30px 30px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media screen and(min-width:1280px) {
+        width: 882px;
+        height: 568px;
+        padding: 40px 30px 30px 30px;
+    }
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    overflow: hidden;
+
+    @media screen and(min-width:768px) {
+        width: 264px;
+        align-items: flex-start;
+    }
+
+    @media screen and(min-width:1280px) {
+        width: 396px;
+        height: 477px;
+    }
+}
+
+.right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and(min-width:768px) {
+        width: 264px;
+    }
+
+    @media screen and(min-width:1280px) {
+        width: 396px;
+        height: 477px;
+    }
+}
+
+.modalMovieTitle {
+    margin: 0;
+    padding: 0;
+}
+
+.modalImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.aboutHeader {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.modalMovieAbout {
+    margin-top: 0;
+}
+
+.button-container {
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    @media screen and(min-width:768px) {
+        position: absolute;
+        bottom: 0;
+    }
+
+    @media screen and(min-width:1280px) {
+        justify-content: left;
+        gap: 25px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.movie-details {
+    cursor: pointer;
+}
+
+.modalMovieVoteAverage {
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: #FF6B01;
+    border-radius: 5px;
+    border: 1px;
+    text-align: center;
+    margin-right: 3px;
+    
+}
+
+tbody td {
+    height: 30px;
+}
+
+tbody td:nth-child(1) {
+    width: 100px;
+}
+
+.movicard-modal-button-watched {
+    width: 122.58px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    background-color: #ff6b08;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+   
+
+    @media screen and(min-width:768px) {
+        width: 125px;
+        }
+    
+    @media screen and(min-width:1280px) {
+        width: 136px;
+    }
+}
+
+.movicard-modal-button-queue {
+    width: 122.58px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 5px 15px 5px 15px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+
+
+    @media screen and(min-width:768px) {
+        width: 125px;
+    }
+
+    @media screen and(min-width:1280px) {
+        width: 136px;
+    }
+}
+
+.modalMovieTitle {
+    font-size: 28px;
+}
+
+.modalMovieVoteAverage,
+.modalMovieVote,
+.modalMoviePopularity,
+.modalMovieOriginalTitle,
+.modalMovieGenre,
+.aboutHeader,
+.modalMovieAbout {
+    font-weight: bold;
+}
